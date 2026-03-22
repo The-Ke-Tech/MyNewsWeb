@@ -1,13 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Night sky gradient background */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gradient-to-b from-[#0d1b2a] via-[#1b263b] to-[#0f4c75] text-white min-h-screen;
+  position: relative;
+  overflow-x: hidden;
+}
+/* Night sky background with glowing stars */
+.bg-night-sky {
+  background: radial-gradient(ellipse at bottom, #0b0c10 0%, #1f1f2e 100%);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-night-sky::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow:
+    50px 100px white,
+    120px 300px white,
+    300px 50px white,
+    400px 400px white,
+    250px 250px white,
+    600px 100px white,
+    700px 500px white,
+    800px 200px white;
+  animation: twinkle 2s infinite alternate;
+  pointer-events: none;
 }
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+/* Glass panels */
+.glass {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn {
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+}
+.btn-primary:hover { background-color: #1f7a33; }
+.btn-secondary {
+  background-color: #ff9800;
+  color: white;
+}
+.btn-secondary:hover { background-color: #e68900; }
+
+/* Text overrides */
+.text-gray-200 { color: #d1d5db; }
+.text-gray-300 { color: #a1a1aa; }
+.text-gray-400 { color: #818181; }
