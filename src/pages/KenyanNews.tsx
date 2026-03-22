@@ -5,7 +5,6 @@ import {
   ExternalLink, 
   Languages, 
   Clock, 
-  TrendingUp,
   AlertCircle,
   Newspaper,
   Sparkles,

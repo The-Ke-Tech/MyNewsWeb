@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import KenyanNews from "./pages/KenyanNews";
 import News from "./pages/News";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 

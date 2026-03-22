@@ -6,7 +6,6 @@ import {
   Shield, 
   RefreshCw, 
   Languages,
-  Code,
   Mail,
   MapPin,
   Heart,

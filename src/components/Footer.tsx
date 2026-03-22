@@ -122,15 +122,15 @@ function Footer() {
               © {currentYear} NewsApp. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition">
+              <Link to="/about" className="text-gray-400 hover:text-blue-400 transition">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition">
+              </Link>
+              <Link to="/about" className="text-gray-400 hover:text-blue-400 transition">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition">
+              </Link>
+              <Link to="/about" className="text-gray-400 hover:text-blue-400 transition">
                 Cookie Policy
-              </a>
+              </Link>
             </div>
           </div>
         </div>
