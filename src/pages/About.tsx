@@ -184,7 +184,7 @@ const About: React.FC = () => {
           </div>
           <div className="flex items-center gap-3 bg-white/10 rounded-lg p-4">
             <MapPin className="text-green-400" size={24} />
-            <span className="text-gray-300">Built with ❤️ in Kenya</span>
+            <span className="text-gray-300">Built with Benson Ke, Nairobi Kenya</span>
           </div>
         </div>
         <div className="mt-6 text-center">

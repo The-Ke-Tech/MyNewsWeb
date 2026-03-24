@@ -100,13 +100,13 @@ function Footer() {
               <li className="flex items-center gap-3 text-gray-300 text-sm">
                 <Mail size={18} className="text-blue-400" />
                 <a href="mailto:info@newsapp.co.ke" className="hover:text-blue-400 transition">
-                  info@newsapp.co.ke
+                  benokoth707@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-gray-300 text-sm">
                 <Phone size={18} className="text-blue-400" />
-                <a href="tel:+254700000000" className="hover:text-blue-400 transition">
-                  +254 700 000 000
+                <a href="tel:+254701804627" className="hover:text-blue-400 transition">
+                  +254 701804627
                 </a>
               </li>
             </ul>
